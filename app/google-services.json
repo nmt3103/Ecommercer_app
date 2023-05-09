@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309741468309",
+    "project_id": "ecommercerkotlin",
+    "storage_bucket": "ecommercerkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309741468309:android:8347a19e56209bb0b7399c",
+        "android_client_info": {
+          "package_name": "com.example.ecommercer_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtFLLtSQai4gXwroFNtkBaxgpyp8RQBF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

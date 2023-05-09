@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blury_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:drawableStart="@drawable/ic_kleine_shape"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Kleine"
+        android:textColor="@color/g_black"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLetsLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_thin"
+        android:gravity="center"
+        android:text="Let's Register"
+        android:textColor="@color/g_black"
+        android:textSize="@dimen/_27sdp"
+        app:layout_constraintEnd_toEndOf="@id/tvAppName"
+        app:layout_constraintStart_toStartOf="@id/tvAppName"
+        app:layout_constraintTop_toBottomOf="@id/guideline8" />
+
+    <TextView
+        android:id="@+id/tvDontHaveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Do you have an account? login"
+        android:textColor="@color/g_hint"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tvLetsLogin"
+        app:layout_constraintStart_toStartOf="@id/tvLetsLogin"
+        app:layout_constraintTop_toBottomOf="@id/tvLetsLogin" />
+
+    <EditText
+        android:id="@+id/edFirstName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/white_background"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:hint="First name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tvDontHaveAnAccount"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/edLastName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/white_background"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:hint="Last name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/edFirstName"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/white_background"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:hint="Email"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/edLastName"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/white_background"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:hint="Password"
+        android:password="true"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/edEmail"
+        android:singleLine="true"/>
+
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        style="@style/blueButtonStyle"
+        app:spinning_bar_color="@color/white"
+        android:fontFamily="@font/poppins_light"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/edLastName"
+        app:layout_constraintStart_toStartOf="@id/edLastName"
+        app:layout_constraintTop_toBottomOf="@id/edPassword" />
+
+
+    <ImageView
+        android:id="@+id/btnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/facebook_login"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        app:layout_constraintBottom_toBottomOf="@id/btnFacebook"
+        app:layout_constraintEnd_toEndOf="@id/btnFacebook"
+        app:layout_constraintStart_toStartOf="@id/btnFacebook"
+        app:layout_constraintTop_toTopOf="@id/btnFacebook" />
+
+    <ImageView
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/google_login"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        app:layout_constraintBottom_toBottomOf="@id/btnGoogle"
+        app:layout_constraintEnd_toEndOf="@id/btnGoogle"
+        app:layout_constraintStart_toStartOf="@id/btnGoogle"
+        app:layout_constraintTop_toTopOf="@id/btnGoogle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1751026" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
